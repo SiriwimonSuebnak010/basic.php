@@ -9,7 +9,7 @@ if ($query->num_rows > 0){
     session_start();
     $_SESSION['sess_id'] = session_id();
     $_SESSION['fullname'] = $result->fullname;
-    echo header("Location: ../dashboard.php");
+    echo header("location: ../index.php");
 } else {
-    echo header("Location: ../login.php");
+    echo header("location: ../login.php");
 }
